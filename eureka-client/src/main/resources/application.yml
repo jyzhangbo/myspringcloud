@@ -1,0 +1,19 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8081
+spring:
+  application:
+    name: eureka-client
+
+mapway:
+    apidoc:
+         enabled: true #开启或者关闭文档
+         url: /doc/* #文档访问路径URL
+         author: operation #文档管理员
+         copyright: 新奥数能  #版权人
+         title: 运维接口 #文档标题
+         subTitle: 运维接口  #文档副标题
+         scans: com.github.controller #扫描的包
