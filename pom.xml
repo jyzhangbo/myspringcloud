@@ -11,6 +11,7 @@
     <modules>
         <module>eurekaserver</module>
         <module>eureka-client</module>
+        <module>feign-client</module>
     </modules>
 
     <dependencyManagement>

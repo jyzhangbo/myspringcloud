@@ -18,7 +18,9 @@ public class HomeController {
     @RequestMapping(value = "/getName")
     @Doc(value = "获取姓名")
     public User home(@RequestParam @ApiField(value = "姓名") String name){
-        return null;
+        User user=new User();
+        user.name=name;
+        return user;
     }
 
 }
