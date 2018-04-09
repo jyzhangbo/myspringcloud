@@ -22,9 +22,9 @@ public class HomeController {
     HomeClient homeClient;
 
     @RequestMapping(value = "/getUser")
-    public String getUserInfo(){
+    public User getUserInfo(){
         User user = homeClient.queryUser();
-        return user.toString();
+        return user;
     }
 
     @RequestMapping(value = "/user")

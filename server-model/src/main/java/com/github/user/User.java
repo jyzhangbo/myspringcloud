@@ -9,6 +9,9 @@ import cn.mapway.document.annotation.Doc;
 @Doc(value = "用户信息")
 public class User {
 
+    @ApiField(value = "端口",example = "1234")
+    public String port;
+
 
     @ApiField(value = "姓名",example = "张博")
     public String name;
@@ -19,7 +22,8 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
+                "port='" + port + '\'' +
+                ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 '}';
     }
