@@ -10,5 +10,6 @@
 #### feign-client项目,feign介绍
 
 #### gateway-server项目,zuul网关
+[zuul网关配置](gateway-server/readme.md)
 
 #### server-model项目,服务实体
