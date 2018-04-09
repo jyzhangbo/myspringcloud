@@ -10,8 +10,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>eurekaserver</module>
-        <module>eureka-client</module>
+        <module>user-server</module>
         <module>feign-client</module>
+        <module>server-model</module>
+        <module>gateway-server</module>
+        <module>app-server</module>
     </modules>
 
     <dependencyManagement>
@@ -32,5 +35,12 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

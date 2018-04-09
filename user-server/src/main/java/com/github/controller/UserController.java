@@ -2,8 +2,9 @@ package com.github.controller;
 
 import cn.mapway.document.annotation.ApiField;
 import cn.mapway.document.annotation.Doc;
-import com.github.controller.model.User;
+import com.github.user.User;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,15 +12,16 @@ import org.springframework.web.bind.annotation.RestController;
  * zhangbo
  */
 @RestController
-@RequestMapping(value = "/home")
-@Doc(value = "测试",group = "接口/home")
-public class HomeController {
+@RequestMapping(value = "/user")
+@Doc(value = "用户接口",group = "接口/用户")
+public class UserController {
 
-    @RequestMapping(value = "/getName")
-    @Doc(value = "获取姓名")
-    public User home(@RequestParam @ApiField(value = "姓名") String name){
+    @RequestMapping(value = "/query")
+    @Doc(value = "获取用户信息")
+    public User queryUser(){
         User user=new User();
-        user.name=name;
+        user.name="zz";
+        user.address="北京";
         return user;
     }
 

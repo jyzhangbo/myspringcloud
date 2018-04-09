@@ -4,8 +4,14 @@ server:
 eureka:
   instance:
     hostname: localhost
+  #关闭保护模式
+  server:
+    enable-self-preservation: false
   client:
+    #是否注册到注册中心
     registerWithEureka: false
+    #是否拉取信息
     fetchRegistry: false
+    #注册中心地址
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
