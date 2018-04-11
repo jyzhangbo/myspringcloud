@@ -3,6 +3,8 @@ package com.github.user;
 import cn.mapway.document.annotation.ApiField;
 import cn.mapway.document.annotation.Doc;
 
+import java.util.List;
+
 /**
  * zhangbo
  */
@@ -19,12 +21,5 @@ public class User {
     @ApiField(value = "地址",example = "北京")
     public String address;
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "port='" + port + '\'' +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                '}';
-    }
+
 }

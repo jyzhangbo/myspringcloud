@@ -26,7 +26,6 @@ public class UserController {
         User user=new User();
         user.port=port;
         user.name="zz";
-        user.address="北京";
         return user;
     }
 
